@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap');
+
+body{
+	margin: 0;
+	font-family: 'Amiri Quran';
+}
+
+.ability-wrapper{
+	margin: 20px;
+	display: flex;
+	flex-wrap: nowrap;
+/*	align-items: center;*/
+	gap: 50px;
+}
+.ability-vid {
+	width: 750px;
+	height: 420px;
+	box-shadow: 5px 5px 10px 0 black;
+}
+.ability-vid video{
+	width: 100%;
+}
+.ability-text{
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(0, 0, 0);
+	color: whitesmoke;
+	height: 100%;
+	max-width: 700px;
+}
+.ability-name{
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	height:70px;
+	gap: 20px;
+	background-color: rgb(14, 15, 15);
+	color: whitesmoke;
+	font-size: 25px;
+	font-weight: 700;
+}
+.ability-desc{
+	padding: 15px;
+	font-size: 20px;
+	line-height: 25px; 
+}
+.ability-name img{
+	height: 100%;
+}
+.ability-title{
+	text-transform: capitalize;
+}
+.ability-option{
+	display: flex;
+	gap: 5px;
+	justify-content: center;
+	margin: 20px;
+}
+.ability-option div{
+	height: 70px;
+	width: 70px;
+}
+.ability-option div img{
+	height: 80%; 
+}
+.notGray{
+	filter: grayscale(0%);
+}
+.gray{
+	filter: grayscale(100%);
+}
+.ability-option div img:hover{
+	transform: scale(1.25);
+	cursor: pointer;
+	filter: grayscale(0%);
+}
+
